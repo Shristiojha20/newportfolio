@@ -1,0 +1,222 @@
+:root{
+    --main:#000; /*write this to avoid dupicacy and write this instead of colours, called VARIABLES*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+header{
+
+}
+
+#nav{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #000;
+    color: #fff;
+    align-items: center;
+}
+
+
+
+#links{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+}
+
+
+
+#links li a{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#name{
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.main{
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    
+
+}
+
+.details{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+    
+}
+
+.details h1{
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.details p{
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #514b4b;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    
+}
+
+.download-cv{
+    height: 40px;
+    width: 180px;
+    background: yellow;
+    text-decoration: none;
+    color: #252323;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.image img{
+    height: 500px;
+    width: 450px;
+    border: #000;
+}
+
+.projects{
+    min-height: 100vh;
+    /* background: aqua; */
+}
+
+.project-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2 , 50vh);
+}
+
+.project-cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    padding: 30px;
+    gap: 20px; /*display flex property adding spacing between each items*/
+    /* border: 2px solid salmon; */
+    background: rgba(26, 15, 76, 0.5);
+    border-radius: 8px;
+    color:white;
+     /* backdrop-filter: blur(10); */
+
+}
+.title{
+    text-align: center;
+    font: size 40px;;
+}
+.tags{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tag{
+  min-width: 80px;
+    align-content: center;
+    height:40px;
+    text-align: center;
+    background: linear-gradient(90deg,blue,purple);
+    border-radius: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact{
+    height: 100vh;
+    /* background-color: green; */
+}
+.contact-title{
+    text-align: center; 
+    font-size: 40px;
+}
+.contact-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    /* background: black; */
+}
+.form{
+    color: black;
+    background-color: rgb(228, 220, 220);
+
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 10px 10px 10px gray;
+
+    
+}
+.form input{
+    padding: 0.5rem;
+    border-radius: 2%;
+}
+
+.submitb{
+    padding: 0.5rem;
+   background-color: blanchedalmond;
+   border-radius: 20%;
+}
+
+.project-cards:hover{
+    transform: translate(0,-5px);
+}
+@media (max-width:933px){
+    .project-card-container{
+        grid-template-columns: 1fr; /*adding responsiveness into cards*/
+    }
+    .main{
+       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 1fr; /*break points refes to tabs, mobile or screen on which our coded website doesnt look good on like 240 to 480 is for tabs*/
+       
+
+    }
+}
+@media(min-width:320px) and (max-width:480){ /* media query for tbablets-ie responsiveness, where the website gets distorted*/
+
+
+}
